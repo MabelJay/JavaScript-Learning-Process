@@ -1,0 +1,28 @@
+1. js programme is written by Unicode
+2. comments is the same as java: //  /* */
+3. Js identifier: should begin with a-z/_/$, the latter can be a-z/_/$/number
+4. data type:
+   primitive type: number string  boolean null undefined
+   object type: take for example(Array  Function)
+ OR
+   mutable type: object  array
+   immutable type: string number boolean null undefined
+5. overflow: Infinity/- Infinity
+   underflow
+   0/0 == NaN(not equal to any value, including itself)
+6. escape sequence: \(\n \v \'' \' \\)
+7. string API:
+    contact: +
+    length: str.length
+    str.charAt(i)
+    str.substring( , )
+    str.slice( , )
+    str.slice(val)(when val is negative, this syntax will generate the substring of str from end to start)
+    str.indexof('c')
+    c.lastIndexOf('c')
+    str.indexOf('c', i)
+    s.split(',')
+    s.replace('c1','c2')
+    s.toUpperCase()
+    ps: replace() and toUpperCase() would generate a new string because of string is immutable type
+8. to get the type of a value: typeof val;
