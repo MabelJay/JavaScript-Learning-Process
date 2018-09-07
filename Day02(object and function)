@@ -1,0 +1,28 @@
+1. Any value is object except the primitive type in JavaScript
+2. All objects is mutable, and we can get and use them by references not the value
+3. each object have three related object attributes:
+    prototype
+    class
+    extensible flag
+4. creating objects:
+      object literal notation: {} -> key value pairs
+      new: var a  = new Array();
+      Object.create(): var obj = Object.create(prototype);
+5. to set the attributes of the object:
+      dot notation: object.property = value;
+      bracket notation: object['property'] = value;
+6.delete attributes of an object: delete obj.property(or obj['property'])      
+7. find attribute, that is to say, to see if an attribute exits in an object: 
+      property in object(true or false);
+      object.hasOwnProperty("property");
+      object.propertyIsEnumerable("property");   // combines hasOwnProperty() and judgement of enumerable attribute
+8. object constructor function:
+      eg:
+        function Car(color, model, year){
+          this.color = color;
+          this.model = model;
+          this.year = year;        
+        }
+
+      
+      
