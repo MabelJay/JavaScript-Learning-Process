@@ -24,5 +24,38 @@
           this.year = year;        
         }
 
-      
-      
+9. getter and setter:
+        eg:
+     get proc(){
+     // code
+     }
+     set proc(){
+     //code
+     }
+10. four features of data attributes: value/writable/enumerable/configurable. 
+    if you want to get the descriptor of a certain attribute of a certain object, you can do that as follows:
+    Object.getOwnPropertyDescriptor(object, "property");
+    
+11. if you want to set the charateristic of an attribute or create an attribute owned a certain feature, you can do that as follows:
+    Object.defineProperty(object, "property", "descriptor");
+
+12. if you want to detect an object is the prototype of another object, you can use the following method:
+    object.isPrototype(obj);
+
+13. ECMAScript 5 provides native functions(JSON.stringify() JSON.parse())to fulfill the serialization and deserialization
+    eg: 
+        deep clone:
+        o = {x:1, y:"abc"};
+        s = JSON.stringify(o);
+        p = JSON.parse(s);
+
+14. function definition:
+        eg:
+        1. function func_name(){
+        }
+        2. var result = function(){
+        }
+        or:
+        var result = function fanc_name(){}
+
+15. varargs function: function func_name(/* ... */){}   //arguments[i]
