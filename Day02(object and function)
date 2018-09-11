@@ -53,7 +53,7 @@
         eg:
         1. function func_name(){
         }
-        2. var result = function(){
+        2. var result = function(){     //anonymous function
         }
         or:
         var result = function fanc_name(){}
