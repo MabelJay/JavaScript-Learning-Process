@@ -6,5 +6,11 @@
 3. untyped:
    the elements in an array could be number, string, boolean,eg: var fishTank = ['glass', 10, true];
    
-4. methods: [].pop(); [].push(); [].shift; [].unshift;
+4. methods: 
+    [].pop();    // remove an item from the end of the array
+    [].push();   // add an item from the end of the array
+    [].shift;    // remove an item from the front of the array
+    [].unshift;  // add an item from the front of the array
+  
+5. Array.isArray(obj); 
   
