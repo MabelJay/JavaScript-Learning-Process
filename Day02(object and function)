@@ -59,3 +59,26 @@
         var result = function fanc_name(){}
 
 15. varargs function: function func_name(/* ... */){}   //arguments[i]
+
+16. function scope: global and local
+    Variables declared outside of a function are global variables.
+    Variables declared inside a function definition are local variables.
+
+17. strict mode: 'use strict'
+
+18. Logical operators: and(&&) or(||) not(!)
+
+19. Conditional statements: if()/else if()/else
+
+20. Switch statements: 
+        swtich(expression){
+            code x:
+                code block;
+                break;
+            code y:
+                code block;
+                break;
+            default:
+                code block;
+        }
+    
