@@ -81,4 +81,14 @@
             default:
                 code block;
         }
+
+21. Math :
+        Math.floor();
+        Math.random();
+        
+22. Loops:
+        while
+        do while
+        for
+        
     
