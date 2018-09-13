@@ -64,3 +64,33 @@
     ^n	Matches any string with n at the beginning of it
     ?=n	Matches any string that is followed by a specific string n
     ?!n	Matches any string that is not followed by a specific string n
+
+11. keywords(this & bind):
+    sample:
+      let cat = {
+        sound: 'meow',
+        speak: function(){
+          console.log(this.sound);
+        }
+      };
+      speakFunction = cat.speak;
+      speakFunction(); //undefined
+   solution:
+      speakFunction = cat.speak;
+      speakFunctionBind = speakFunction.bind(cat);
+      speakFunctionBind();  //'meow'
+     
+12. keywords(this & call):
+    var person = {
+      firstName: 'Jane'
+    }
+    var hello = function(greeting){
+      console.log(greeting+" "+this.firstName);
+    }      
+    
+    hello("hello"); //hello undefined
+  solution:
+    hello.call(person, "hello");  //hello Jane
+  
+    
+    
