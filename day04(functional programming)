@@ -21,6 +21,6 @@
 	  return info.age;
     });
   ageArr;   // (3) [22, 23, 15]
-
-4. 
+  
+4. reduce():  
   
