@@ -1,0 +1,26 @@
+1. higher-order functions: Functions that operate on other functions,either by taking them as arguments or by returning them, are called 
+   higher-order functions.
+     filter() & map() & reduce()                    //return a new array
+   
+2. filter(): array.filter(function);      // callback function   element in array   returns array of true values
+   eg: 
+  var arr = [122, 90, 10, 40, 66];
+  arr.filter(function(test){
+	     return test>60;
+   });
+   //(3) [122, 90, 66]
+  
+3. map(): array.map(function);
+   eg:
+   var arr1 = [
+    {name: 'tom1', age: 22},
+    {name: 'tom2', age: 23},
+    {name: 'tom3', age: 15}
+    ];
+    var ageArr = arr1.map(function(info){
+	  return info.age;
+    });
+  ageArr;   // (3) [22, 23, 15]
+
+4. 
+  
