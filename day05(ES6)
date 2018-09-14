@@ -1,0 +1,4 @@
+1. let
+
+2. const: declaring const will create a value that is a read-only reference. It can be either global or local to the function and block.
+
