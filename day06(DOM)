@@ -1,0 +1,34 @@
+1. DOM: document object model
+
+2. document.getElementById('id');
+   document.querySelector('#id');
+   document.querySelectors('.className');
+   document.querySelector('tagName');
+   eg:
+    var title = document.getElementById('title');        //<h1 id="title">Todo Tracker</h1>
+    var title2 = document.querySelector(#'title');       //<h1 id="title">Todo Tracker</h1>
+    var todos = document.querySelectorAll('.todos');     // NodeList(3) [li.todos, li.todos, li.todos]
+    
+3.  element.innerText
+    element.innerHTML
+    element.textContext
+    (input.value)
+  
+    appendChild();
+    removeChild();
+    createElement();
+    firstChild;
+    
+4. addEventListener(event,function);
+   eg:  
+    event: 'click';
+    
+5. form: 
+    eg:
+      var formField = document.querySelector('form');
+      var input = document.getElementById('user-todo');
+      formField.addEventListener('submit',function(e){
+        e.preventDefault();
+        console.log(input.value);
+      });
+      
