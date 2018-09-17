@@ -2,3 +2,13 @@
 
 2. const: declaring const will create a value that is a read-only reference. It can be either global or local to the function and block.
 
+3. new lines
+
+4. placeholder: ${variable}
+
+5. Arrow Functions(they utilize a new token =>):Arrow Functions are annonymous and change the way "this" binds in the functions.
+   eg:
+    var es5Func = function(){return 2;}
+    let es6Func = () => 2;
+    
+6. spread operator: ... 
