@@ -17,3 +17,11 @@
   
   3. amcwebportal/webcontent/scripts/ajax.js, there you could find one simple example we are using for prototype
      AjaxCritiera 
+     
+Helpful tools:
+  codepen 
+  Netlify
+  modao
+  brackets.io
+  iconfinder
+ 
