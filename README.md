@@ -27,3 +27,4 @@ Helpful tools:
   Flaticon    (https://www.flaticon.com/)
   htmlcolorcodes  (https://htmlcolorcodes.com/)
   Emmet     (https://emmet.io/)
+  HTML5 Boilerplate (https://html5boilerplate.com/)
