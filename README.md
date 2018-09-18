@@ -25,4 +25,5 @@ Helpful tools:
   brackets.io (http://brackets.io/)
   iconfinder  (https://www.iconfinder.com/)
   Flaticon    (https://www.flaticon.com/)
+  htmlcolorcodes  (https://htmlcolorcodes.com/)
  
