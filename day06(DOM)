@@ -32,3 +32,11 @@
         console.log(input.value);
       });
       
+6. localstorage -> web storage that stores data with no expiration date
+   methods:
+      setItem();   // add a key and value to local storage
+      getItem();   // retrieve a value by the key
+      removeItem(); // remove an item by key
+      clear(); 	// clear all storage
+      
+
