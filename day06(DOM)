@@ -39,4 +39,10 @@
       removeItem(); // remove an item by key
       clear(); 	// clear all storage
       
-
+7. css selectors: 
+      tag: 
+         eg:  p{}
+      class:
+         eg:  .className{}
+      id:
+         eg:  #id{}
