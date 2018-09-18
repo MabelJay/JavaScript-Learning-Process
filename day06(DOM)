@@ -46,3 +46,6 @@
          eg:  .className{}
       id:
          eg:  #id{}
+
+8. mobile friendly: 
+	css file: @media screen and (max-width: 768px){}
