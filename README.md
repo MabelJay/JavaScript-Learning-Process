@@ -19,9 +19,10 @@
      AjaxCritiera 
      
 Helpful tools:
-  codepen 
-  Netlify
-  modao
-  brackets.io
-  iconfinder
+  codepen (https://codepen.io/)
+  Netlify (https://www.netlify.com/)
+  modao   (https://modao.cc/)
+  brackets.io (http://brackets.io/)
+  iconfinder  (https://www.iconfinder.com/)
+  Flaticon    (https://www.flaticon.com/)
  
