@@ -49,3 +49,15 @@
 
 8. mobile friendly: 
 	css file: @media screen and (max-width: 768px){}
+
+9. closures:
+	eg:
+	function makeFunc() {
+	  var name = 'Mozilla';
+	  function displayName() {
+	    alert(name);
+	  }
+	  return displayName;
+	}
+	var myFunc = makeFunc();
+	myFunc();
