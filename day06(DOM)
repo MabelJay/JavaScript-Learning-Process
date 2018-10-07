@@ -2,7 +2,7 @@
 
 2. document.getElementById('id');
    document.querySelector('#id');
-   document.querySelectors('.className');
+   document.querySelectorAll('.className');
    document.querySelector('tagName');
    eg:
     var title = document.getElementById('title');        //<h1 id="title">Todo Tracker</h1>
