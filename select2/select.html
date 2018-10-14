@@ -6,20 +6,42 @@
 <link href="css/select2.min.css" rel="stylesheet" />
 <script src="js/jquery-2.1.0.js"></script>
 <script src="js/select2.min.js"></script>
-</head>
-<body>
-<select class="js-example-basic-multiple" name="states[]" multiple="multiple"  style="width: 50%">
-  <option value="AL">Alabama</option>
-  <option value="CN">China</option>
-  <option value="WY">Wyoming</option>
-</select>
-
-
-
 <script type="text/javascript">
 	$(document).ready(function() {
-	    $('.js-example-basic-multiple').select2();
+		$('.js-example-basic-multiple').select2({
+			width : '200px'
+		});
 	});
 </script>
+<style>
+    .select2-container .select2-selection--multiple {
+    min-height: 20px;
+}
+    .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0px;
+}
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 2px;
+}
+    .select2-dropdown {
+    font-size: 2px;
+}
+    .select2-container .select2-search--inline {
+    height: 18px;
+}
+</style>
+</head>
+<body>
+	<select class="js-example-basic-multiple" name="states[]"
+		multiple="multiple">
+		<option value="AL">Alabama</option>
+		<option value="CN">China</option>
+		<option value="WY">Wyoming</option>
+        <option value="AUS">Australia</option>
+		<option value="US">America</option>
+		<option value="Ind">India</option>
+	</select>
 </body>
 </html>
