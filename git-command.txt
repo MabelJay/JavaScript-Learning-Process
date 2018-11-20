@@ -1,52 +1,51 @@
-git diff : �Ƚϵ��ǹ���Ŀ¼�е�ǰ�ļ����ݴ��������֮��Ĳ��죬���޸�֮��û���ݴ������ı仯���ݡ����鿴��δ�ݴ���ļ���������Щ���֣�
+git diff : 比较的是工作目录中当前文件和暂存区域快照之间的差异，即修改之后还没有暂存起来的变化内容。（查看尚未暂存的文件更新了哪些部分）
 
-git diff --cached: �鿴���ݴ�Ľ�Ҫ���ӵ��´��ύ������ݡ�
+git diff --cached: 查看已暂存的将要添加到下次提交里的内容。
 
-git commit -a ������ʹ���ݴ�����ķ�ʽ���������Ѿ����ٹ����ļ��ݴ�һ��һ���ύ��
+git commit -a ：跳过使用暂存区域的方式，把所有已经跟踪过的文件暂存一起一并提交。
 
-git rm:��Git���Ƴ�ĳ���ļ��������ݴ������Ƴ������ɾ��֮ǰ�޸Ĺ������Ѿ��ŵ��ݴ�����Ļ����ͱ���ʹ��ǿ��ɾ��ѡ�� -f����ȫ���ԣ����ڷ�ֹ��ɾ��û�����ӵ����յ����ݣ����������ݲ��ܱ�Git�ָ���
-��һ�������������Ҫ���ļ������ڴ��̣����ǲ�����Git�������٣�������������.gitignore�ļ�ʱ����ʱʹ�ã� git rm --cached filename
+git rm:从Git中移除某个文件，即从暂存区中移除，如果删除之前修改过并且已经放到暂存区域的话，就必须使用强制删除选项 -f（安全特性，用于防止误删还没有添加到快照的数据，这样的数据不能被Git恢复）
+另一种情况，我们想要让文件保留在磁盘，但是不想让Git继续跟踪，即当忘记添加.gitignore文件时，此时使用： git rm --cached filename
 
-git mv file_from file_to���������ļ�
+git mv file_from file_to：重命名文件
 
-git log �ᰴ�ύʱ���г����еĸ��£�����ĸ������������档 �������������ģ����������г�ÿ���ύ�� SHA-1 У��͡����ߵ����ֺ͵����ʼ���ַ���ύʱ���Լ��ύ˵����
-һ�����õ�ѡ���� -p��������ʾÿ���ύ�����ݲ��졣 ��Ҳ���Լ��� -2 ������ʾ��������ύ�� git log -p -2
+git log 会按提交时间列出所有的更新，最近的更新排在最上面。 正如你所看到的，这个命令会列出每个提交的 SHA-1 校验和、作者的名字和电子邮件地址、提交时间以及提交说明。
+一个常用的选项是 -p，用来显示每次提交的内容差异。 你也可以加上 -2 来仅显示最近两次提交： git log -p -2
 
-git log --stat: ���Կ���ÿ���ύ�ļ��Ե�ͳ����Ϣ
+git log --stat: 可以看到每次提交的简略的统计信息
 --pretty= online(short full fuller)
-git log --pretty=format: ������Ҫ��ʾ�ļ�¼��ʽ
-git log --pretty=format:"%h %s" --graph :�����չʾ��֧���ϲ���ʷ
+git log --pretty=format: 定制需要显示的记录格式
+git log --pretty=format:"%h %s" --graph :形象地展示分支、合并历史
 
-git log --since=2.weeks��--author --grep-��
--(n)������ʾ����� n ���ύ
---since, --after������ʾָ��ʱ��֮����ύ��
---until, --before������ʾָ��ʱ��֮ǰ���ύ��
---author������ʾָ��������ص��ύ��
---committer������ʾָ���ύ����ص��ύ��
---grep�� ����ʾ��ָ���ؼ��ֵ��ύ
--S�� ����ʾ���ӻ��Ƴ���ĳ���ؼ��ֵ��ύ
+git log --since=2.weeks（--author --grep-）
+-(n)：仅显示最近的 n 条提交
+--since, --after：仅显示指定时间之后的提交。
+--until, --before：仅显示指定时间之前的提交。
+--author：仅显示指定作者相关的提交。
+--committer：仅显示指定提交者相关的提交。
+--grep： 仅显示含指定关键字的提交
+-S： 仅显示添加或移除了某个关键字的提交
 
-git commit --amend�� ���������ύ������ֻ����һ���ύ���ڶ����ύ�Ľ���������һ���ύ
+git commit --amend： 尝试重新提交，最终只会有一个提交，第二次提交的结果将代替第一次提交
 
-git reset HEAD file: ȡ���ݴ�
+git reset HEAD file: 取消暂存
 
-git checkout -- file: ����֮ǰ�������޸ģ�Σ�����
+git checkout -- file: 撤销之前所做的修改（危险命令）
 
+git remote:列出每一个远程服务器的简写 -v：会显示读写远程仓库使用的Git保存的简写与其对应的URL
 
-git remote:�г�ÿһ��Զ�̷������ļ�д -v������ʾ��дԶ�ֿ̲�ʹ�õ�Git����ļ�д�����Ӧ��URL
+git remote add <shortname> <url>：添加一个新的远程git仓库，同时指定一个可以轻松引用的简写
 
-git remote add <shortname> <url>������һ���µ�Զ��GIT�ֿ⣬ͬʱָ��һ�������������õļ�д
+git fetch [remote-name]:拉取远程仓库中有但是本地没有的信息。执行完成后，你将会拥有远程仓库中所有分支的引用，可以随时合并或查看。
 
-git fetch [remote-name]:��ȡԶ�ֿ̲����е��Ǳ���û�е���Ϣ��ִ����ɺ��㽫��ӵ��Զ�ֿ̲������з�֧�����ã�������ʱ�ϲ���鿴��
+如果你有一个分支设置为跟踪一个远程分支，可以使用git pull 命令来自动地抓取然后合并远程分支到当前分支。
 
-�������һ����֧����Ϊ����һ��Զ�̷�֧������ʹ��git pull �������Զ���ץȡȻ��ϲ�Զ�̷�֧����ǰ��֧��
+git push [remote-name] [branch-name]:将分支推送到服务器
+git remote show [remote-name]:查看一个远程仓库更多的信息
+git remote rename:远程仓库的重命名
+git remote rm [remote-name]:移除一个远程仓库
 
-git push [remote-name] [branch-name]:����֧���͵�������
-git remote show [remote-name]:�鿴һ��Զ�ֿ̲�������Ϣ
-git remote rename:Զ�ֿ̲��������
-git remote rm [remote-name]:�Ƴ�һ��Զ�ֿ̲�
+git tag：查看标签
+git show tagname：可以看到标签信息与对应的提交信息
 
-git tag���鿴��ǩ
-git show tagname�����Կ�����ǩ��Ϣ���Ӧ���ύ��Ϣ
-
-git config --global alias.co checkout:Ϊcheckout��������һ������
+git config --global alias.co checkout:为checkout命令设置一个别名
