@@ -49,3 +49,14 @@ git tag：查看标签
 git show tagname：可以看到标签信息与对应的提交信息
 
 git config --global alias.co checkout:为checkout命令设置一个别名
+
+ssh-keygen -t rsa:生成ssh密钥
+
+git difftool [filename]:查看改动
+
+git log
+git reset --hard [commit-version]:退回之前的版本
+
+
+
+
