@@ -1,0 +1,70 @@
+browser.js   	编译JSX
+react.js	React核心库
+react-dom.js	React操作DOM库
+
+1. JSX可以直接创建组件--直接写组件的HTML
+创建出来的是组件--不是HTML标签
+
+2. 有且仅有一个父级
+
+3. class -> className
+   for -> htmlFor
+
+_________________________________________
+
+1. 所有组件必须继承自React.Component
+2. 必须：
+	a.有constructor和super
+	b.首字母必须大写
+	c.一定要有render()
+3.传参： {xxx} 
+
+__________________________________________
+
+1. for和if可以使用JS自带的语法
+2. {}：可以向HTML输出，也可以向属性输出
+3. 组件传参：
+	接收参数：this.props => 所有属性
+4. this.props: 只读
+   this.state: 可修改（一旦改变，页面就会重新渲染组件，类似于vue的data）
+   this.普通属性： 没用
+
+5. React可变的一般是state
+	a. 初始化-constructor
+		this.state = {...};
+	b. 修改:
+		this.setState({
+		  xxx:...
+		})
+	c. 使用：
+		this.state.xxx
+6. 事件： 
+	onClick = {this.fn.bind(this)}
+7. 组件间通信--Redux
+	1.父级->子级   属性
+	2.子级->父级   方法
+
+node -v
+npm -v
+cd [workspace]
+npm init
+npm install left-pad --save
+node index.js
+
+https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/
+
+项目结构：
+	1. src  源文件(index.js：入口JS文件)
+	2. public 静态文件(index.html:入口html文件)
+  
+  
+npx create-react-app  project-name
+cd project-name
+npm start
+或：
+	1. 安装
+	npm i -g create-react-app
+ 2.  创建项目
+	create-react-app 名字
+   3.    运行项目
+	npm start
